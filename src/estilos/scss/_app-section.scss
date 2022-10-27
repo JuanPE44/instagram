@@ -1,0 +1,99 @@
+
+.app-section {    
+  
+  padding-top: 6rem;    
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .section {
+      width: 100%;
+      max-width: 470px;
+      height: 200vh;
+      background: #fff;
+
+      .historias {
+        position: relative;
+        width: 100%;
+        margin-top: 26px;       
+        min-height: 119px;
+        border-radius: 8px;
+        border: 1px solid #dbdbdb;
+
+        .contenido-historias {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          padding: 16px 0 16px 16px;
+          display: flex;
+          overflow: hidden;
+
+          .perfil-historia {
+            margin-right: 10px;
+            cursor: pointer;
+            .contenedor-perfil {
+              display: flex;
+              flex-direction: column;
+              align-items: center;  
+
+
+              .foto-perfil{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+                padding: 2px;                                
+                
+                &::after{
+                  content: '';
+                  position: absolute;
+                  width: calc(100% - 5px);
+                  height: calc(100% - 5px);
+                  border-radius: 50%;
+                  background: #fff;
+                  z-index: 10;                 
+                }
+
+                img {
+                  position: absolute;
+                  width: 56px;
+                  height: 56px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  object-position: center;
+                  background: #222;
+                  z-index: 20;
+                }
+              }
+
+              .normal {
+                background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);                
+              }
+
+              .mejores {
+                background: #47d76f;
+              }
+
+              .visto {
+                background: #ececec;
+              }
+
+              .nombre {
+                letter-spacing: .01em;
+                padding-left: 2px;
+                padding-right: 2px;
+                font-weight: 400;
+                font-size: 11.4px;
+              }
+            }
+          }
+        }
+      }
+    }    
+  }
+}
+

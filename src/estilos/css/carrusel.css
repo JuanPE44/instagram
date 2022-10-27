@@ -1,0 +1,22 @@
+
+.carousel-indicators {
+    transform: scale(.2);
+    -webkit-transform: scale(.2);
+    -moz-transform: scale(.2);
+    -ms-transform: scale(.2);
+    -o-transform: scale(.2);
+    bottom: -50px !important;
+}
+
+.carousel-indicators .boton {
+    width: 30px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    opacity: 1 !important;
+    background: #a8a8a8 !important;
+
+}
+
+.carousel-indicators .active {      
+background: #0d9bf7 !important;
+}
