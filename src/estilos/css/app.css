@@ -121,7 +121,7 @@ html body {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-image: url(../../assets/imgs/perfiles/perfil.jpg);
+  background-image: url(../../assets/imgs/perfiles/perfil-juaanpenalba.jpg);
   background-position: center;
   background-size: contain;
 }
@@ -133,8 +133,11 @@ html body {
 }
 .app-section {
   padding-top: 6rem;
+  padding-bottom: 7rem;
 }
 .app-section .main {
+  position: relative;
+  display: flex;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -142,8 +145,8 @@ html body {
 .app-section .main .section {
   width: 100%;
   max-width: 470px;
-  height: 200vh;
   background: #fff;
+  margin-right: 32px;
 }
 .app-section .main .section .historias {
   position: relative;
@@ -215,11 +218,132 @@ html body {
   font-weight: 400;
   font-size: 11.4px;
 }
-
+.app-section .main .section-sugerencias {
+  min-width: 319px;
+  max-width: 319px;
+  margin-top: 26px;
+}
+.app-section .main .section-sugerencias .sugerencias-perfil {
+  display: flex;
+  align-items: center;
+  margin-top: 23px;
+  margin-bottom: 10px;
+  margin-right: 4px;
+}
+.app-section .main .section-sugerencias .sugerencias-perfil .perfil-img {
+  flex-grow: 0;
+  margin-right: 12px;
+}
+.app-section .main .section-sugerencias .sugerencias-perfil .perfil-img img {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+.app-section .main .section-sugerencias .sugerencias-perfil .perfil-nombres {
+  flex-grow: 1;
+}
+.app-section .main .section-sugerencias .sugerencias-perfil .perfil-nombres .nombre {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: -1px;
+}
+.app-section .main .section-sugerencias .sugerencias-perfil .perfil-nombres .subNombre {
+  color: #8E8E8E;
+  font-size: 14px;
+}
+.app-section .main .section-sugerencias .sugerencias-perfil .perfil-cambiar {
+  flex-grow: 0;
+}
+.app-section .main .section-sugerencias .sugerencias-perfil .perfil-cambiar button {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+  font-size: 12px;
+  color: #0095f6;
+  background: transparent;
+}
+.app-section .main .sugerencias-personas .sugerencias {
+  display: flex;
+  padding: 6px 0;
+}
+.app-section .main .sugerencias-personas .sugerencias span {
+  flex-grow: 1;
+  color: #8E8E8E;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.app-section .main .sugerencias-personas .sugerencias div {
+  flex-grow: 0;
+  color: #262626;
+  font-size: 12px;
+}
+.app-section .main .sugerencias-personas .contenedor-personas {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+.app-section .main .sugerencias-personas .contenedor-personas .persona {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.app-section .main .sugerencias-personas .contenedor-personas .persona .persona-img {
+  flex-grow: 0;
+  margin-right: 12px;
+}
+.app-section .main .sugerencias-personas .contenedor-personas .persona .persona-img img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.app-section .main .sugerencias-personas .contenedor-personas .persona .persona-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.app-section .main .sugerencias-personas .contenedor-personas .persona .persona-info .nombre {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 550;
+}
+.app-section .main .sugerencias-personas .contenedor-personas .persona .persona-info .descripcion {
+  color: #8E8E8E;
+  font-size: 12px;
+  letter-spacing: -0.2px;
+}
+.app-section .main .sugerencias-personas .contenedor-personas .persona .persona-seguir {
+  flex-grow: 0;
+}
+.app-section .main .sugerencias-personas .contenedor-personas .persona .persona-seguir button {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+  font-size: 12px;
+  color: #0095f6;
+  background: transparent;
+}
+.app-section .main .sugerencias-footer {
+  color: #C7C7C7;
+  font-size: 12px;
+}
+.app-section .main .sugerencias-footer .sugerencias-footer-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 19px;
+}
+.app-section .main .sugerencias-footer .sugerencias-footer-info ul li {
+  margin-right: 9px;
+  cursor: pointer;
+}
 .contenedor-publicacion {
   width: 100%;
   margin-top: 16px;
-  height: 50rem;
   background: #eee;
   border-radius: 8px;
 }
@@ -341,12 +465,75 @@ html body {
   line-height: 18px;
   letter-spacing: -1px;
 }
-.contenedor-publicacion .contenedor-informacion .info-comentario {
+.contenedor-publicacion .contenedor-informacion .info-descripcion {
   display: flex;
   font-size: 14px;
 }
-.contenedor-publicacion .contenedor-informacion .info-comentario span {
+.contenedor-publicacion .contenedor-informacion .info-descripcion span {
   font-weight: 550;
+}
+.contenedor-publicacion .contenedor-informacion .info-comentarios {
+  margin-bottom: 12px;
+  color: #8e8e8e;
+  font-weight: 400;
+  font-size: 14px;
+}
+.contenedor-publicacion .contenedor-informacion .info-comentarios p {
+  margin: 0;
+}
+.contenedor-publicacion .contenedor-informacion .info-fecha {
+  color: #8e8e8e;
+  font-weight: 400;
+  font-size: 10px;
+  margin-bottom: 16px;
+}
+.contenedor-publicacion .contenedor-informacion .info-fecha p {
+  margin: 0;
+}
+
+.app-footer {
+  display: none;
+  margin-top: 100px;
+  padding: 0 16px;
+  width: 100%;
+  height: auto;
+}
+.app-footer .contenido-footer {
+  margin-bottom: 52px;
+}
+.app-footer .contenido-footer .footer-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.app-footer .contenido-footer .footer-info div {
+  margin-bottom: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.app-footer .contenido-footer .footer-info div a {
+  color: #8E8E8E;
+  font-size: 12px;
+}
+.app-footer .contenido-footer .footer-licencia {
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  color: #8E8E8E;
+  font-size: 12px;
+}
+.app-footer .contenido-footer .footer-licencia div:last-child {
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+  .section-sugerencias {
+    display: none;
+  }
+  .app-footer {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

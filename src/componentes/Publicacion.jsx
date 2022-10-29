@@ -3,7 +3,7 @@ import '../estilos/css/app.css';
 import Carrusel from './Carrusel';
 
 
-function Publicacion({perfilNombre, tipoHistoria, lugar, cantImgs, likes,descripcion}) {
+function Publicacion({perfilNombre, tipoHistoria, lugar, cantImgs, likes,descripcion,comentarios, fecha}) {
   return (
     <div className='contenedor-publicacion'>
       <header className='header-publicacion'>
@@ -46,10 +46,15 @@ function Publicacion({perfilNombre, tipoHistoria, lugar, cantImgs, likes,descrip
         <div className='info-likes'>
           {`${likes} Me gusta`}
         </div>
-        <div className='info-comentario'>
+        <div className='info-descripcion'>
           <p><span>{perfilNombre}</span> {descripcion}</p>
         </div>
-        <div className='info-fecha'></div>
+        <div className='info-comentarios'>
+          <p>{`Ver los ${comentarios} comentarios`}</p>
+        </div>
+        <div className='info-fecha'>
+          <p>{`HACE ${fecha}`}</p>
+        </div>
       </div>
     </div>
   );
